@@ -1,0 +1,168 @@
+
+/* base classes */
+.container {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+
+/* header styles */
+.header {
+    height: 65px;
+}
+.header-wraper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    align-items: center;
+    
+}
+.ul-el {
+    display: flex;
+    justify-content: space-between;
+    width:601px;
+    background-color: aquamarine;
+}
+.consulting {
+    width: 184px;
+    height: 65px;
+    background-color: #6B77E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 40px;
+}
+.right-block {
+    display: flex;
+    align-items: center;
+}
+
+/* section #1 styles */
+.section-title-box {
+    width: 283px;
+    margin: 0 auto;
+    background-color: lightcoral;
+    text-align: center;
+}
+.section-work {
+    margin-top:136px;
+}
+.box {
+  width: 386px;
+  height: 383px;
+  background-color: #F4F4F4;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.descr {
+    width: 300px;
+    background-color: yellow;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 37px;
+}
+.icon {
+    width: 72px;
+    height: 72px;
+    background-color: #40DDB6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+
+/* image styles */
+.image-text {
+    width: 341px;
+    height: 114px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 24px 69px; */
+    /* text-align: center; */
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+}
+.image-block {
+    position: relative;
+}
+
+
+
+/* section#2 styles */
+.text-on-image {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #000;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    /* transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: linear; */
+    transition: all 0.8s linear;
+}
+.image {
+    width: 100%;
+}
+.image-new-block {
+    position: relative;
+}
+
+/* hover effects */
+.text-on-image:hover {
+    background-color: lightslategray;
+    transform: translate(-50%,-50%)  rotate(0deg);
+}
+
+
+/* keyframe */
+.car-image {
+    position: absolute;
+    width: 100px;
+    animation: carmove 3s 2s linear infinite alternate;
+    /* animation-direction: alternate; */
+}
+.car-block {
+    position: relative;
+    height: 150px;
+}
+
+@keyframes carmove {
+    from {left: 0;}
+    to {left: 800px;}
+}
+
+
+.image2 {
+    width: 150px;
+    animation: carmovenew 3s infinite;
+}
+@keyframes carmovenew {
+    0% {transform: translateX(0)}
+    25% {transform: translateX(200px)}
+    50% {transform: translateX(400px)}
+    75% {transform: translateX(600px);}
+    100% {transform: translateX(800px);}
+}
